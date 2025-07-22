@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sail & Sync</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <img src="assets/logo.png" alt="Sail & Sync" class="logo">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#arrangementen">Arrangementen</a></li>
+        <li><a href="#over">Over Ons</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="/admin.html" class="btn btn-secondary">Admin</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Lead the team.<br>From the water.</h1>
+      <p>Ervaar de vrijheid en verbinding met onze luxe sloepen.</p>
+      <button class="btn" onclick="scrollToSection('arrangementen')">Bekijk Arrangementen</button>
+    </div>
+  </section>
+
+  <!-- Arrangementen -->
+  <section id="arrangementen" class="features">
+    <div class="container">
+      <h2>Onze Arrangementen</h2>
+      <div class="grid">
+        <div class="card"><h3>Pleziervaart</h3><p>Ontspannen varen zonder verplichtingen.</p></div>
+        <div class="card"><h3>Teambuilding Spel</h3><p>Coöperatieve opdrachten op het water.</p></div>
+        <div class="card"><h3>Plenair + Varen</h3><p>Presentatie + vaartocht in één.</p></div>
+        <div class="card"><h3>Maatwerk</h3><p>Een pakket volledig op maat gemaakt.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Over Ons -->
+  <section id="over" class="about">
+    <div class="container flex">
+      <div class="about-text">
+        <h2>Over Sail & Sync</h2>
+        <p>We geloven dat samen varen sociale relaties versterkt. Zelf aan het roer, samen genieten van Leiden en omgeving.</p>
+      </div>
+      <div class="about-image">
+        <img src="assets/logo.png" alt="Sloep op het water">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Reservering -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Reserveer Nu</h2>
+      <form id="bookingForm" class="contact-form" onsubmit="handleBooking(event)">
+        <div class="form-group">
+          <label>Naam</label><input type="text" name="name" required>
+        </div>
+        <div class="form-group">
+          <label>E-mail</label><input type="email" name="email" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Datum</label><input type="date" name="date" required>
+          </div>
+          <div class="form-group">
+            <label>Dagdeel</label>
+            <select name="timeSlot" required>
+              <option value="ochtend">Ochtend</option>
+              <option value="middag">Middag</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Aantal boten</label><input type="number" name="boats" min="1" max="4" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Arrangement</label>
+          <select name="package" required>
+            <option value="pleziervaart">Pleziervaart</option>
+            <option value="teamopdracht">Teamopdrachten</option>
+            <option value="plenair">Plenair + varen</option>
+            <option value="maatwerk">Maatwerk</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Notities</label><textarea name="notes" rows="3"></textarea>
+        </div>
+        <p id="priceDisplay">Prijs: €0</p>
+        <button type="submit" class="btn">Reserveer & Betaal</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="container"><p>© 2025 Sail & Sync</p></div></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
