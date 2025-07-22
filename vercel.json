@@ -1,6 +1,13 @@
+// vercel.json
 {
   "rewrites": [
-    { "source": "/admin_Version4.html", "destination": "/admin.html" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/admin.html",
+      "destination": "/admin.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
