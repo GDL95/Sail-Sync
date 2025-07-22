@@ -127,8 +127,8 @@ style.css updates:
 ```css
 /* Toevoeging kaart-icon styling */
 .card-icon {
-  width: 48px;
-  height: 48px;
+  width: 30px;
+  height: 30px;
   display: block;
   margin: 0 auto 1rem;
 }
