@@ -122,4 +122,24 @@ body {
   color: white;
   text-align: center;
   padding: 1rem 0;
+}style.css updates:
+```css
+/* Toevoeging kaart-icon styling */
+.card-icon {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: 0 auto 1rem;
 }
+
+/* Bestaande kaart-styling voor harmonie */
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--navy);
+}
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+}
+```
