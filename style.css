@@ -14,7 +14,7 @@ body {
 }
 
 .navbar {
-  background: var(--navy) !important;
+  background: var(--navy);
   color: white;
   padding: 0.75rem 0;
 }
