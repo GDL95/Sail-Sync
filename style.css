@@ -1,3 +1,5 @@
+style.css:
+```css
 :root {
   --navy: #001f3f;
   --light: #f4f9fc;
@@ -123,17 +125,26 @@ body {
   text-align: center;
   padding: 1rem 0;
 }
-style.css updates:
-```css
-/* Toevoeging kaart-icon styling */
-.card-icon {
-  width: 30px;
-  height: 30px;
+
+/* Logo aanpassen */
+.logo {
   display: block;
-  margin: 0 auto 1rem;
+  margin: 0;
+  max-width: 150px;
+  width: 150px;
+  height: auto;
 }
 
-/* Bestaande kaart-styling voor harmonie */
+/* Kaart-icon styling */
+.card-icon {
+  display: block;
+  margin: 0 auto 1rem;
+  max-width: 120px;
+  width: 120px;
+  height: auto;
+}
+
+/* Kaart-tekst styling */
 .card h3 {
   margin-bottom: 0.5rem;
   color: var(--navy);
@@ -144,14 +155,3 @@ style.css updates:
   color: #444;
 }
 ```
-/* Logo verkleinen */
-.logo {
-  max-width: 80px;
-  height: auto;
-}
-
-/* Icons verkleinen */
-.card-icon {
-  max-width: 120px;
-  height: auto;
-}
